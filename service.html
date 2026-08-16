@@ -28,8 +28,8 @@ src="https://www.facebook.com/tr?id=1246148674096033&ev=PageView&noscript=1"
   gtag('config', 'G-VSRM63PVL6');
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Service — Durham's Crown Detailing</title>
-<meta name="description" content="Premium mobile car detailing in the Greater Boston area. Choose your package and book online.">
+<title>Packages — Durham's Crown Mobile Detailing</title>
+<meta name="description" content="Premium mobile car detailing in Durham Region, Ontario. Choose your package and book online.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
@@ -113,7 +113,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 <body>
 
 <nav>
-  <a href="index.html#services" class="nl"><span class="nl-name">DURHAM'S CROWN DETAILING</span></a>
+  <a href="index.html#services" class="nl"><span class="nl-name">DURHAM'S CROWN</span></a>
   <a href="index.html#services" class="nav-back">&#8592; Back to services</a>
 </nav>
 
@@ -157,10 +157,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 <script>
 const SERVICES = {
   exterior: {
-    name: 'Premium Exterior Detail',
+    name: 'Silver Package',
     tagline: 'A proper exterior reset — washed, decontaminated, and finished so the paint looks deep and the car turns heads again.',
     img: 'assets/svc-exterior.jpg',
-    prices: { Sedan: 90, SUV: 100, Truck: 120 },
+    prices: { Sedan: 179.99, SUV: 204.98, Truck: 219.98 },
     time: '~1–2 hours',
     included: [
       'Pre-rinse and pressure wash',
@@ -180,10 +180,10 @@ const SERVICES = {
     ]
   },
   interior: {
-    name: 'Interior Reset Detail',
+    name: 'Gold Package',
     tagline: 'A full interior refresh designed to restore cleanliness and create a like-new feel inside the cabin.',
     img: 'assets/svc-interior.jpg',
-    prices: { Sedan: 150, SUV: 180, Truck: 200 },
+    prices: { Sedan: 199.99, SUV: 224.98, Truck: 239.98 },
     time: '~1.5–2.5 hours',
     included: [
       'Full vacuum: carpets, seats, floor mats, trunk',
@@ -201,10 +201,10 @@ const SERVICES = {
     ]
   },
   full: {
-    name: 'Signature Full Vehicle Detail',
+    name: 'Platinum Package',
     tagline: 'Our most popular service. A complete inside-and-out transformation that combines both exterior and interior detailing.',
     img: 'assets/svc-full.jpg',
-    prices: { Sedan: 220, SUV: 260, Truck: 300 },
+    prices: { Sedan: 249.99, SUV: 274.98, Truck: 289.98 },
     time: '~2.5–4 hours',
     included: [
       'Exterior: Pressure wash & two-bucket hand wash',
@@ -234,7 +234,7 @@ if (!SERVICES[id]) id = 'full';
 const svc = SERVICES[id];
 let veh = 'Sedan';
 
-document.title = svc.name + ' — Durham's Crown Detailing';
+document.title = svc.name + " — Durham's Crown Mobile Detailing";
 document.getElementById('heroImg').src = svc.img;
 document.getElementById('heroImg').alt = svc.name;
 document.getElementById('svcTitle').textContent = svc.name;
@@ -286,3 +286,4 @@ render();
 </script>
 </body>
 </html>
+
