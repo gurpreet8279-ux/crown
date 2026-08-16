@@ -2,60 +2,35 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1246148674096033');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1246148674096033&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VSRM63PVL6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-VSRM63PVL6');
-</script>
-<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAAEfklEQVR4nO1VS0wbVxS97834h5OYP7hxbDBpVIOxq+AgFpGiNmpCIqiSFtFKqEVqdqnUJVLJioR+UrWI0hBVTXfNqlkVZ1XlIwXq0hARGsekUGEPcdOYjxlsz9h4Pu91McRxXaDJpuqCs3rz3rvnvHPv1R2AbWzjfw+0wRZCCCEAoJRSSvOPMMa5NaUUY0yfUNAneE599PQF+eybgWGYQoYCOkppaWmpxVIMAJlMOhaL5dgJIXa7w2Ip1ut1icRqIpGoq9urKArCGCMkSdnZ2VlRFDWSrd5bU1M7MDg4fPHroa+Gy8rKEEIsywJAS0vL6OjYr8HgvXvB06ffDwTG0+k1Mb0mK0RLDsdxnZ2dBV7/5lpLK8dFJm7/QohqNpuPHT9OKVUUxeWq7zt7jiJKVOXSpW/a2tq9Xm8mk0ZAgRIt3OFwfHf5ssPhIITkNNgCE5q769euHz78Gsuybe2v+/0jRSbz518MGE2msrLS/rPn/H5/IPDzWnbNoNdjjCmFAwd8AwMDLMvqdTqPxzM/P59fvI0L1d//USazJgji91eu3J6YyEqSqpKenh632z0+Pn7r1mhPT09+VDgc1ry63W7YuiMwxgghq9U6OTk5NzcXjf4RjkS46MPBLwcBoK+vbzWR4Hm+q6sLY2w0GhmG8Xi8M7OzYY77YWREC39a182qTSn1+XzuRo8opg0G/WqCvzri1+l0be3tJlORLMtX/SOZTAZjTCj1NTU1NnoVVX0wHbpzZyK/kTbLFEIIEGu22LyUApVTiUf3EELmXeWmipckRSXZlLAwjRAihCBKrHt9CZFiBOLSb0QWARDAukBhkdfpMaKE2D2v2ptOAqXRuyPJP4MUoLzuwJ6mDgA6c/PbFFE1Dmvdy+UvthpX09nUYnoxCAA59k0FNIOuV96t3NtC1OzMjYvazr5D71hdh+RsGqmCzdVCVUlv3KW31KX4pE6vW4z9qCoSIAR0SwGEMKWk2LqvxtdmKDLEH/6+Eg0BwK4qp7P5JGswEBUsxz6QRCG9upSKLyaXHiEkLHM3hOX7BewbCGCMEWZUhVTUNArLUQFgLnBFkTIIoXJ7g7ASldMiwljKCFkxKaWTQvzxMhdcmLmZXJpDCGkT5blHXg4Mo8v5xE/XW6Gwiw4ePMjzfCgU8vl8/MqKLCu1ztrp6QfJZOIFqzXCcdXVVZIkUQo8z3u9XlVVw5FIvat+YSEWj8cbGtzRaDQWe5zrVJzLDAA0Nze3trZ2d3e3th49f/6zWqfTUVNz6r1ThJChoaHeM2dstj2db73d0dFpsViqqquHhy/W1zd0vPnGp598fOLEiaNHjvT2fmh32CFvzq8LaN+7bTaGZa9dv2YymSMcNzU1lUolLwxf2L3bGo/Hp6dD9Q0NU3enKisr9jftr3M65x/O3w/dl2V57KexQCAgK+oKz4uCsEWKmeKSEs3Qjh07MMbaoDaZTNoFnU4HAEajsaSkBDOM2WzWdrTYnTt3Go3GZyjLRoPwn7+qzUK2mqP5x/9yb5M7zxK1jf8afwE3dCL5bjswKQAAAABJRU5ErkJggg==">
+<!-- Add Durham's Crown analytics IDs here when available. -->
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/gurpreet8279-ux/Gurpreet-Singh/main/public/logo-new.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Durham's Crown Detailing — Premium Mobile Car Detailing | Newton, MA</title>
-<meta name="description" content="Professional mobile car detailing in Newton, Waltham, Brookline, Needham and surrounding towns. We come to you. Book online today.">
-<link rel="canonical" href="https://yddetailers.com/">
+<title>Durham's Crown Mobile Detailing | Durham Region, ON</title>
+<meta name="description" content="Premium mobile auto detailing across Durham Region, including Oshawa, Whitby, Ajax and Pickering. We come to you.">
+<link rel="canonical" href="https://durhamscrowndetailing.ca/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Durham's Crown Detailing — Premium Mobile Car Detailing | Newton, MA">
-<meta property="og:description" content="Professional mobile car detailing in Newton, Waltham, Brookline, Needham and surrounding towns. We come to you. Book online today.">
-<meta property="og:url" content="https://yddetailers.com/">
-<meta property="og:image" content="https://yddetailers.com/assets/svc-full.jpg">
+<meta property="og:title" content="Durham's Crown Mobile Detailing | Durham Region, ON">
+<meta property="og:description" content="Royal treatment for your vehicle, delivered to your driveway across Durham Region.">
+<meta property="og:url" content="https://durhamscrowndetailing.ca/">
+<meta property="og:image" content="https://durhamscrowndetailing.ca/https://raw.githubusercontent.com/gurpreet8279-ux/Gurpreet-Singh/main/public/logo-new.png">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Durham's Crown Detailing",
-  "description": "Mobile car detailing that comes to you in Newton, MA and surrounding Greater Boston towns.",
-  "url": "https://yddetailers.com/",
-  "telephone": "+12483465194",
-  "email": "yzgershon@gmail.com",
-  "image": "https://yddetailers.com/assets/svc-full.jpg",
-  "priceRange": "$90-$300",
+  "name": "Durham's Crown Mobile Detailing",
+  "description": "Premium mobile car detailing throughout Durham Region, Ontario.",
+  "url": "https://durhamscrowndetailing.ca/",
+  "telephone": "+14376633998",
+  "image": "https://durhamscrowndetailing.ca/assets/durhams-crown-logo.png",
+  "priceRange": "CA$179.99-CA$249.99",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Newton",
-    "addressRegion": "MA",
-    "addressCountry": "US"
+    "addressLocality": "Durham Region",
+    "addressRegion": "ON",
+    "addressCountry": "CA"
   },
-  "areaServed": ["Newton MA", "Waltham MA", "Watertown MA", "Brookline MA", "Wellesley MA", "Needham MA", "Belmont MA", "Brighton MA", "Allston MA", "Cambridge MA"],
+  "areaServed": ["Oshawa ON", "Whitby ON", "Ajax ON", "Pickering ON", "Durham Region ON"],
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
@@ -63,8 +38,7 @@ src="https://www.facebook.com/tr?id=1246148674096033&ev=PageView&noscript=1"
     "closes": "20:00"
   },
   "sameAs": [
-    "https://www.instagram.com/yddetailers/",
-    "https://www.tiktok.com/@yddetailers"
+    "https://www.instagram.com/durhams_crown_mobile_detailing"
   ]
 }
 </script>
@@ -72,6 +46,8 @@ src="https://www.facebook.com/tr?id=1246148674096033&ev=PageView&noscript=1"
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
+/* Testimonials from the source site were intentionally removed pending Durham's Crown reviews. */
+#reviews{display:none!important;}
 :root{
   --blue:#5b7cfa;
   --blue-dark:#4a68e0;
@@ -999,14 +975,14 @@ h1,h2,h3,.hero h1,.story-h2,.cta-h2,.why-h2,.testi-h2,.svc-h2{font-family:var(--
 <nav>
   <div class="nav-left">
   <a href="#home" class="nl">
-    <img src="assets/logo.png" alt="Durham's Crown Detailing logo">
-    <span class="nl-name">DURHAM'S CROWN DETAILING</span>
+    <img src="assets/durhams-crown-logo.png" alt="Durham's Crown Mobile Detailing logo">
+    <span class="nl-name">DURHAM'S CROWN</span>
   </a>
   <div class="nav-socials">
-    <a href="https://www.instagram.com/yddetailers/" target="_blank" rel="noopener" class="nav-soc ig" aria-label="Durham's Crown Detailing on Instagram">
+    <a href="https://www.instagram.com/durhams_crown_mobile_detailing" target="_blank" rel="noopener" class="nav-soc ig" aria-label="Durham's Crown on Instagram">
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="igGrad" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FEDA75"/><stop offset="0.25" stop-color="#FA7E1E"/><stop offset="0.5" stop-color="#D62976"/><stop offset="0.75" stop-color="#962FBF"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="url(#igGrad)"/><circle cx="12" cy="12" r="4.5" stroke="url(#igGrad)"/><circle cx="17.5" cy="6.5" r="1" fill="url(#igGrad)" stroke="none"/></svg>
     </a>
-    <a href="https://www.tiktok.com/@yddetailers" target="_blank" rel="noopener" class="nav-soc tt" aria-label="Durham's Crown Detailing on TikTok">
+    <a href="tel:+14376633998" class="nav-soc tt" aria-label="Call Durham's Crown">
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path fill="#25F4EE" transform="translate(-1,-0.4)" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/>
         <path fill="#FE2C55" transform="translate(1,0.4)" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/>
@@ -1040,22 +1016,22 @@ h1,h2,h3,.hero h1,.story-h2,.cta-h2,.why-h2,.testi-h2,.svc-h2{font-family:var(--
     </video>
   </div>
   <div class="hero-content">
-    <a class="hero-badge" href="https://www.google.com/search?sca_esv=c20d9372e9219eb3&q=YDdetailers&stick=H4sIAAAAAAAAAONgU1I1qDAzNk8zt0i1NE4xTTFONjK1MqgwNk1KSzZOMU82SLYwSLM0WsTKHemSklqSmJmTWlQMAIc5PWE3AAAA" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+    <a class="hero-badge" href="#reviews" style="text-decoration:none;color:inherit;">
       <svg class="hb-glogo" viewBox="0 0 48 48"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18c-.44-1.32-.69-2.73-.69-4.18s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
       <span class="hb-vsep"></span>
       <span class="hb-score">5.0</span>
       <span class="hb-stars">★★★★★</span>
       <span class="hb-count">· 20+ Reviews</span>
     </a>
-    <h1>Premium Mobile Detailing<br><span class="blue">That Comes to You.</span></h1>
-    <p>Durham's Crown Detailing delivers professional exterior and interior car care right at your doorstep. We bring the shine while you save time.</p>
+    <h1>Royal Treatment<br><span class="blue">For Your Vehicle.</span></h1>
+    <p>Durham's Crown brings premium exterior, interior, and restorative vehicle care directly to your driveway or workplace.</p>
     <div class="hero-btns">
       <a class='btn-primary ripple pulse-cta' href='booking.html'>Reserve Your Spot</a>
     </div>
     <div class="hero-trust">
-      <div class="hero-trust-item"><div class="hti">&#10003;</div> Money-Back Guarantee</div>
-      <div class="hero-trust-item"><div class="hti">&#10003;</div> Fully Insured</div>
-      <div class="hero-trust-item"><div class="hti">&#10003;</div> Free Cancellation</div>
+      <div class="hero-trust-item"><div class="hti">&#10003;</div> Durham Region Mobile</div>
+      <div class="hero-trust-item"><div class="hti">&#10003;</div> Premium Materials</div>
+      <div class="hero-trust-item"><div class="hti">&#10003;</div> 5.0 Rated on Google</div>
     </div>
   </div>
 </section>
@@ -1103,39 +1079,39 @@ h1,h2,h3,.hero h1,.story-h2,.cta-h2,.why-h2,.testi-h2,.svc-h2{font-family:var(--
 <!-- SERVICES / PRICING -->
 <section class="services-section reveal" id="services"><span id="pricing" style="position:absolute;top:-80px;"></span>
   <div class="svc-label">Our Packages</div>
-  <h2 class="svc-h2">Professional Mobile Services</h2>
+  <h2 class="svc-h2">Detailing Packages</h2>
   <p class="svc-sub">Tap a package to see exactly what's included, choose your vehicle, and book in seconds.</p>
   <div class="svc-grid reveal-stagger">
 
     <a class="svc-card" href="service.html?id=exterior">
       
-      <img class="svc-photo" src="assets/svc-exterior.jpg" alt="Premium Exterior Detail" loading="lazy">
+      <img class="svc-photo" src="assets/svc-exterior.jpg" alt="Silver Package" loading="lazy">
       <div class="svc-overlay">
         <div class="svc-pkg-label">Package</div>
-        <h3 class="svc-name">Premium Exterior Detail</h3>
-        <div class="svc-from">From $90</div>
+        <h3 class="svc-name">Silver Package</h3>
+        <div class="svc-from">CA$179.99</div>
       </div>
       <div class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></div>
     </a>
 
     <a class="svc-card" href="service.html?id=interior">
       
-      <img class="svc-photo" src="assets/svc-interior.jpg" alt="Interior Reset Detail" loading="lazy">
+      <img class="svc-photo" src="assets/svc-interior.jpg" alt="Gold Package" loading="lazy">
       <div class="svc-overlay">
         <div class="svc-pkg-label">Package</div>
-        <h3 class="svc-name">Interior Reset Detail</h3>
-        <div class="svc-from">From $150</div>
+        <h3 class="svc-name">Gold Package</h3>
+        <div class="svc-from">From CA$199.99</div>
       </div>
       <div class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></div>
     </a>
 
     <a class="svc-card featured" href="service.html?id=full">
       <div class="svc-popular">MOST POPULAR</div>
-      <img class="svc-photo" src="assets/svc-full.jpg" alt="Signature Full Vehicle Detail" loading="lazy">
+      <img class="svc-photo" src="assets/svc-full.jpg" alt="Platinum Package" loading="lazy">
       <div class="svc-overlay">
         <div class="svc-pkg-label">Package</div>
-        <h3 class="svc-name">Signature Full Vehicle Detail</h3>
-        <div class="svc-from">From $220</div>
+        <h3 class="svc-name">Platinum Package</h3>
+        <div class="svc-from">From CA$249.99</div>
       </div>
       <div class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></div>
     </a>
@@ -1146,28 +1122,28 @@ h1,h2,h3,.hero h1,.story-h2,.cta-h2,.why-h2,.testi-h2,.svc-h2{font-family:var(--
 <section id="story">
 <div class="yk-story reveal">
   <div class="yk-story-img">
-    <img src="assets/story-m3-foam.webp" alt="Blue BMW M3 covered in snow foam during a Durham's Crown Detailing mobile exterior wash in Newton MA" loading="lazy">
+    <img src="assets/story-m3-foam.webp" alt="Vehicle covered in snow foam during a Durham's Crown mobile detail" loading="lazy">
     <img class="story-after" src="assets/story-m3-clean.webp" alt="The same BMW M3 spotless and shining after the detail" loading="lazy">
-    <div class="yk-story-img-tag">Yishai &amp; Dan,<br>at work.</div>
+    <div class="yk-story-img-tag">The Crown<br>difference.</div>
   </div>
   <div>
     <div class="yk-story-label">03 &middot; Our Story</div>
-    <h2 class="yk-story-h">Two guys.<br>One <em>obsession.</em></h2>
-    <p class="yk-story-p">Durham's Crown Detailing started as a weekend hustle between two friends who couldn&rsquo;t stand a dirty car. We bring the rig to your driveway, plug into your hose, and treat your car the way we treat ours &mdash; patiently, by hand, with chemistry that respects the paint.</p>
-    <p class="yk-story-p">No upselling. No fluorescent lobby. Just two clean cars after we leave &mdash; yours, and the one we drove in on.</p>
-    <p class="yk-story-p">Beyond the cars, we care about the community we grew up in. In 2026, we helped raise over <strong>$500 for Newton North High School&rsquo;s Business Club</strong> &mdash; because the same community that supports us deserves our support back.</p>
-    <div class="yk-story-sig">&mdash; Yishai &amp; Dan</div>
+    <h2 class="yk-story-h">Your car.<br>Treated like <em>royalty.</em></h2>
+    <p class="yk-story-p">Durham's Crown Mobile Detailing is built around careful, convenient automotive care. We come to your driveway or workplace with the products, equipment, and attention your vehicle deserves.</p>
+    <p class="yk-story-p">Every detail is completed patiently and by hand, from the paintwork and wheels to the smallest interior surfaces. The goal is simple: a vehicle you are proud to get back into.</p>
+    <p class="yk-story-p">Proudly serving <strong>Oshawa, Whitby, Ajax, Pickering, and the surrounding Durham Region</strong> with premium mobile detailing.</p>
+    <div class="yk-story-sig">&mdash; Durham's Crown</div>
     <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:26px;">
       <a class="btn-primary ripple" href="booking.html" style="padding:15px 38px;font-size:16px;">Book Now &rarr;</a>
-      <a href="https://www.instagram.com/yddetailers/" target="_blank" rel="noopener" class="btn-insta" style="display:inline-flex;">
+      <a href="https://www.instagram.com/durhams_crown_mobile_detailing" target="_blank" rel="noopener" class="btn-insta" style="display:inline-flex;">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
         Follow us on Instagram
       </a>
     </div>
     <div class="yk-story-stats">
-      <div class="yk-story-stat"><div class="n">2024</div><div class="l">Founded</div></div>
-      <div class="yk-story-stat"><div class="n">80<em>+</em></div><div class="l">Details</div></div>
-      <div class="yk-story-stat"><div class="n">0</div><div class="l">Complaints</div></div>
+      <div class="yk-story-stat"><div class="n">5.0</div><div class="l">Google Rating</div></div>
+      <div class="yk-story-stat"><div class="n">100<em>%</em></div><div class="l">Mobile Service</div></div>
+      <div class="yk-story-stat"><div class="n">ON</div><div class="l">Durham Region</div></div>
     </div>
   </div>
 </div>
@@ -1191,7 +1167,7 @@ h1,h2,h3,.hero h1,.story-h2,.cta-h2,.why-h2,.testi-h2,.svc-h2{font-family:var(--
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">What areas do you serve?<span class="faq-ic">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">We're based in Newton and cover the surrounding Greater Boston area — including Brookline, Watertown, Wellesley, Needham, Belmont, Brighton, Allston, and Cambridge. Not sure if you're in range? Message us and we'll confirm before you book.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">We proudly serve Durham Region, including Oshawa, Whitby, Ajax, Pickering, and surrounding communities. Not sure if you're in range? Call or message us and we’ll confirm before you book.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">Do I need to provide water or power?<span class="faq-ic">+</span></button>
@@ -1199,7 +1175,7 @@ h1,h2,h3,.hero h1,.story-h2,.cta-h2,.why-h2,.testi-h2,.svc-h2{font-family:var(--
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">How long does a detail take?<span class="faq-ic">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">It depends on the package. A Premium Exterior runs about 1–2 hours, an Interior Reset about 1.5–2.5 hours, and a Signature Full Detail about 2.5–4 hours. We'll give you a clear time estimate when you book.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Timing depends on the package and condition of the vehicle. Most details take between 1.5 and 4 hours, and we’ll confirm the expected timing with your booking.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">How do I book and pay?<span class="faq-ic">+</span></button>
@@ -1212,12 +1188,12 @@ h1,h2,h3,.hero h1,.story-h2,.cta-h2,.why-h2,.testi-h2,.svc-h2{font-family:var(--
     </div><!-- /faq-list -->
     <div class="yk-area-map reveal">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d150000!2d-71.2092!3d42.3370!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x637f78e93d5d3c25%3A0x35bfc3d7c0c80f92!2sYDdetailers!5e0!3m2!1sen!2sus"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d734520.8607131632!2d-79.48541772361224!3d44.016804430443344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a51231a10bdead%3A0x715308980520b29e!2sDurham%E2%80%99s%20Crown%20Mobile%20Detailing!5e0!3m2!1sen!2sca!4v1779768010319!5m2!1sen!2sca"
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        title="Durham's Crown Detailing service area — Newton, MA and surrounding towns">
+        title="Durham's Crown Mobile Detailing service area — Durham Region, Ontario">
       </iframe>
       <div class="yk-area-map-overlay"></div>
-      <a class="yk-area-map-badge" href="https://maps.app.goo.gl/d7aPASgsSf2f7VrZA" target="_blank" rel="noopener">Newton, MA &middot; 25-mi radius</a>
+      <a class="yk-area-map-badge" href="https://www.google.com/maps/search/?api=1&query=Durham%27s+Crown+Mobile+Detailing" target="_blank" rel="noopener">Durham Region, ON</a>
     </div>
     </div><!-- /faq-grid -->
   </div>
@@ -1268,7 +1244,7 @@ h1,h2,h3,.hero h1,.story-h2,.cta-h2,.why-h2,.testi-h2,.svc-h2{font-family:var(--
           <div class="cr-review">
             <div class="cr-quote-mark">&ldquo;</div>
             <div class="cr-stars-row">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="cr-text">The young men from Durham's Crown Detailing that came to detail my car did a fantastic job. My floor mats look better than new and my car shines inside and out. Will definitely use them in the future.</p>
+            <p class="cr-text">The young men from YD Detailers that came to detail my car did a fantastic job. My floor mats look better than new and my car shines inside and out. Will definitely use them in the future.</p>
             <div class="cr-reviewer"><div class="cr-avatar">L</div><div><div class="cr-reviewer-name">Lynn Green</div><div class="cr-reviewer-meta">Verified Google Review</div></div></div>
           </div>
           <div class="cr-review">
@@ -1316,7 +1292,7 @@ h1,h2,h3,.hero h1,.story-h2,.cta-h2,.why-h2,.testi-h2,.svc-h2{font-family:var(--
           <div class="cr-review">
             <div class="cr-quote-mark">&ldquo;</div>
             <div class="cr-stars-row">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="cr-text">Durham's Crown Detailing did an incredible job on my car. It hasn't looked like this since I first bought my Civic in 2013.</p>
+            <p class="cr-text">YDdetailers did an incredible job on my car. It hasn't looked like this since I first bought my Civic in 2013.</p>
             <div class="cr-reviewer"><div class="cr-avatar">A</div><div><div class="cr-reviewer-name">Amitai Zur</div><div class="cr-reviewer-meta">Verified Google Review</div></div></div>
           </div>
         </div>
@@ -1345,15 +1321,15 @@ h1,h2,h3,.hero h1,.story-h2,.cta-h2,.why-h2,.testi-h2,.svc-h2{font-family:var(--
   <div class="footer-grid">
     <div>
       <div class="footer-brand">
-        <img src="assets/logo.png" alt="Durham's Crown Detailing">
-        <span class="footer-brand-name">DURHAM'S CROWN DETAILING</span>
+        <img src="assets/durhams-crown-logo.png" alt="Durham's Crown Mobile Detailing">
+        <span class="footer-brand-name">DURHAM'S CROWN</span>
       </div>
       <p class="footer-desc">Premium mobile car detailing that comes to you. We bring the shine to your doorstep with professional-grade products and meticulous attention to detail.</p>
       <div class="footer-socials">
-        <a href="https://www.instagram.com/yddetailers/" target="_blank" rel="noopener" class="footer-ig" aria-label="Durham's Crown Detailing on Instagram">
+        <a href="https://www.instagram.com/durhams_crown_mobile_detailing" target="_blank" rel="noopener" class="footer-ig" aria-label="Durham's Crown on Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
         </a>
-        <a href="https://www.tiktok.com/@yddetailers" target="_blank" rel="noopener" class="footer-ig tt" aria-label="Durham's Crown Detailing on TikTok">
+        <a href="tel:+14376633998" class="footer-ig tt" aria-label="Call Durham's Crown">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg>
         </a>
       </div>
@@ -1361,21 +1337,21 @@ h1,h2,h3,.hero h1,.story-h2,.cta-h2,.why-h2,.testi-h2,.svc-h2{font-family:var(--
     <div class="footer-col">
       <h4>Services</h4>
       <ul>
-        <li><a href="service.html?id=exterior">Premium Exterior Detail</a></li>
-        <li><a href="service.html?id=interior">Interior Reset Detail</a></li>
-        <li><a href="service.html?id=full">Signature Full Vehicle Detail</a></li>
+        <li><a href="service.html?id=exterior">Silver Package</a></li>
+        <li><a href="service.html?id=interior">Gold Package</a></li>
+        <li><a href="service.html?id=full">Platinum Package</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Contact</h4>
-      <div class="footer-contact-row"><span class="icon">&#128222;</span><a href="tel:+12483465194" style="color:inherit;text-decoration:none;">(248) 346-5194</a></div>
-      <div class="footer-contact-row"><span class="icon">&#128172;</span><a href="sms:+12483465194" style="color:inherit;text-decoration:none;">Text us anytime</a></div>
-      <div class="footer-contact-row"><span class="icon">&#64;</span><a href="mailto:yzgershon@gmail.com" style="color:inherit;text-decoration:none;">yzgershon@gmail.com</a></div>
+      <div class="footer-contact-row"><span class="icon">&#128222;</span><a href="tel:+14376633998" style="color:inherit;text-decoration:none;">(437) 663-3998</a></div>
+      <div class="footer-contact-row"><span class="icon">&#128172;</span><a href="sms:+14376633998" style="color:inherit;text-decoration:none;">Text us anytime</a></div>
+      <div class="footer-contact-row"><span class="icon">&#128205;</span>Serving Durham Region, ON</div>
       <div class="footer-contact-row"><span class="icon">&#128197;</span>Daily: 8am – 8pm</div>
     </div>
   </div>
   <div class="footer-bottom">
-    <p class="footer-copy">&copy; 2026 Durham's Crown Detailing. All rights reserved.</p>
+    <p class="footer-copy">&copy; 2026 Durham's Crown Mobile Detailing. All rights reserved.</p>
     <div class="footer-legal">
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Service</a>
@@ -1766,3 +1742,4 @@ document.addEventListener("DOMContentLoaded",function(){
 </div>
 </body>
 </html>
+
